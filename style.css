@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .navbar-nav {
+    gap: 25px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #47c664;
+  }
+  
+  .btn-success {
+    background-color: #75BF7A;
+    border-color: #75BF7A;
+    font-weight: 600;
+    border-radius: 5.95px;
+    width: 182px;
+    height: 50px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 20px;
+  }
+  
+  .btn-dark {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    width: 260px;
+    height: 60px;
+  }
+  
+  .text-nav {
+    justify-content: flex-end;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+/*   
+  @media (max-width: 767.98px) {
+    h1 {
+      font-size: 22px;
+    }
+  
+    .btn-dark {
+      font-size: 13px;
+      padding: 10px 18px;
+    }
+  
+    .btn-success {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-collapse {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+  
+    .navbar-collapse .nav-link {
+      padding: 10px 0;
+      text-align: center;
+    }
+  } */
+  
+  /* Mobile menu custom style */
+@media (max-width: 991.98px) {
+    .mobile-nav-custom {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      max-width: 300px;
+      transform: translate(-50%, -50%);
+      background: white;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+  
+    .navbar-collapse.show {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 18px;
+      padding: 10px 0;
+    }
+  
+    .btn-success {
+      width: 100%;
+    }
+  
+    .navbar-toggler {
+      z-index: 1000;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    nav.navbar {
+      position: relative;
+    }
+  }
+
+  /* Top Green Banner Section */
+.download-section {
+    background-color: #75BF7A;
+    padding: 20px;
+    text-align: center; 
+    width: 1280px;
+    height: 166px;
+    align-items: center;
+    align-self: center;
+    margin-left: 20rem;
+    display: flex;
+    border-radius: 10px;
+  }
+  
+  .download-section p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 400px;
+  }
+  
+  .input-group button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .how-it-works-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .how-it-works-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .how-it-works-section h2 span {
+    color: #75BF7A;
+  }
+  
+  .description {
+    max-width: 600px;
+    margin: 10px auto 40px;
+    font-size: 15px;
+    color: #777;
+  }
+  
+  .works-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+  
+  .top-row {
+    margin-bottom: 30px;
+  }
+  
+  .bottom-row {
+    margin-top: 30px;
+  }
+  
+  .step {
+    width: 42%;
+    text-align: center;
+  }
+  
+  .step img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .step h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .step p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  /* Green Circle in Center */
+  .circle-center {
+    width: 300px;
+    height: 300px;
+    background-color: #75BF7A;
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+  
+    .circle-center {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
